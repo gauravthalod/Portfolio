@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(19, 19, 20);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    transition: all 300ms ease;
+}
+/* desktop nav */
+nav{
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: default;
+    background-image: url("assets/logo.png");
+    background-size: cover;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+.navbar a:hover{
+    color: rgb(89, 84, 84);
+}
+/* hamburger nav */
+#hamburger_nav{
+    display: none;
+}
+.hamburger_menu{
+    display: inline-block;
+    position: relative;
+}
+.hamburger_icon{
+    width: 20px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger_icon span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+}
+ul{
+    list-style: none;
+}
+.m_links{
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+/* profile */
+section{
+    margin: 10vh;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 50px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+#profile{
+    background-color: black;
+}
+.profile_pic{
+    display: flex;
+    background-image: url("assets/ppb.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+.title {
+    text-align: center;
+}
+.btn{
+    margin-top: 10px;
+    transition: all 300ms ease;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+}
+.btn:hover{
+    color: rgb(89, 84, 84);
+    border: 1px solid rgb(89, 84, 84);
+}
+footer{
+    height: 20vh;
+    background-color: black;
+    margin-top:  10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pboxes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 75%;
+    overflow: auto;
+    margin:0px 100px 100px 100px;
+}
+.project_box{
+    overflow: hidden;
+    border-radius: 2rem;
+    height: 25rem;
+    min-width: 30%;
+    /* background-color: rgb(35, 35, 35); */
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.heading h1{
+    font-size: 3rem;
+}
+
+.projects_para{
+    text-align: center;
+    color: rgba(245, 245, 245, 0.7);
+}
+.project_pic{
+    margin: 15px;
+    height: 50%;
+    border-radius: 2rem;
+    background-size: cover;
+}
+.subheading{
+    margin: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+.project_box p{
+    margin: 15px;
+    width: 100%;
+    font-size: 0.8rem;   
+    color: rgba(245, 245, 245, 0.5);
+}
